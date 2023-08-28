@@ -34,5 +34,5 @@ SetWinDelay -1              ; disables window action delays
 ;; SCRIPTS TO LOAD
 
 ;; Keyboard Layout
-#Include %A_ScriptDir%\Keyboard\Layouts\umos-layout.ahk
+#Include %A_ScriptDir%\Keyboard\Layouts\umos_layout.ahk
 #Include %A_ScriptDir%\Keyboard\Layouts\tweaks.ahk

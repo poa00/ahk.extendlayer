@@ -1,5 +1,5 @@
 /*
- * File        : umos-layout.ahk
+ * File        : umos_layout.ahk
  * Description : UMOS alternative keyboard layout
  * Copyright   : Copyright (c) ?-2023, Ian Doug, (c) 2020-2023, Gergely Szabo
  * License     : MIT
