@@ -2,11 +2,11 @@
 
 # 1. Description
 
-This is a repository where I collect some of the keyboard focused tweaks and tricks I've implemented in AutoHotkey (‘ AHK’ for short) script. Also, I generally use AHK to emulate my keyboard layout at work where I'm not allowed to install programs or run software with administrator privileges (company policy) – more on this below.
+This is a repository where I collect some of the keyboard focused tweaks and tricks I've implemented in AutoHotkey (‘ AHK’ for short) script. Also, I generally use AHK to emulate my keyboard layout at work where I'm not allowed to install programs or run software with administrator privileges (company policy).
 
 There are some work related scripts which I cannot share and they are purposefully left out. I take care to not leave any such code in my scripts, but let me know or create a pull request if I miss something.
 
-**Disclaimer:** My scripts primarily target AutoHotkey version 2, so while it may be possible to run them on version 1, you may experience unexpected results when doing so.
+**Disclaimer:** My scripts primarily target AutoHotkey version 2, so while it may be possible to run them on version 1, you may experience unexpected results or erratic script behaviour when doing so.
 
 # 2. Keyboard Layouts
 
@@ -48,8 +48,9 @@ The image below showcases the keyboard layout for ANSI 101/104-key keyboards.
 
 ## Implemented
 
-- [x] Swap <kbd>Caps Lock</kbd> with <kbd>RCtrl</kbd>
-- [x] Add Colemak-DH keyboard layout 
+- [x] Swap <kbd>Caps Lock</kbd> with <kbd>RCtrl</kbd> 
+- [x] Add Colemak-DH keyboard layout
+- [x] Optimise key remapping when CPU speed is slow (CPU is downclocked, notebook is running from battery or other performance downgrading features are enabled). Remapped keyboard layout keys are sometimes note emitted or ignored when Windows performance plan is not set to High Performance or Balanced, or the CPU is not running fast enough.
 
 ## To Do
 
@@ -61,22 +62,21 @@ The image below showcases the keyboard layout for ANSI 101/104-key keyboards.
 ../
 ├── main.ahk
 ├── Keyboard/
-│   └── Layouts/..
-│       ├── colemak-dh_layout.ahk
-│       ├── umos_layout.ahk
-│       └── tweaks.ahk
+│   ├── Layouts/
+│   │   ├── colemak-dh_layout.ahk
+│   │   └── umos_layout.ahk
+│   └── Tweaks/..
 ├── LICENSE
 ├── README.md
-└── Assets/
-    └── Images/
-        └── Keyboard_Layouts/..
+└── Assets/..
 ```
 | ***Project Files*** |  |  |
 | :--- | :--- | :--- |
 | **File name** | **Description** | **Comments** |
-| `main.ahk` | It is is the core. This file is loaded first when AHK is launched. | Configures the general behaviour of AutoHotkey, how the scripts are run, and loads subsequent scripts. |
-| `Layouts\Keyboard\` | All keyboard remapping scripts go here. | Keyboard layouts, tweaks etc. |
-| `Assets` | Holds miscellaneous data files for the repository. | These files aren't used or detected by AutoHotkey. The keyboard layout image files were created using [Keyboard Layout Editor](http://keyboard-layout-editor.com). |
+| `main.ahk` | Core script | Configures the general behaviour of AutoHotkey, how the scripts are run, and loads subsequent scripts. |
+| `Keyboard/Layouts` | Keyboard layout scripts | UMOS, Colemak-DH, AZERTY, what have you... |
+| `Keyboard/Tweaks` | Keyboard functions | Code snippets to extend or change the keyboard's capabilities.  |
+| `Assets` | Miscellaneous data files | These files aren't used or detected by AutoHotkey. The keyboard layout image files were created using [Keyboard Layout Editor](http://keyboard-layout-editor.com). |
 
 # 5. Licenses and Forking
 
