@@ -8,13 +8,9 @@ There are some work related scripts which I cannot share and they are purposeful
 
 **Disclaimer:** My scripts primarily target AutoHotkey version 2, so while it may be possible to run them on version 1, you may experience unexpected results when doing so.
 
-# 2. Keyboard Layout
+# 2. Keyboard Layouts
 
-UMOS stands for *UCIEA Mirrored (&) Ory's Symbols*. This layout is a mirrored version of Ian Doug's original UCIEA keyboard layout which has also gone through several versions and modifications. Here's the authorship:  
-Author: Ian Doug <ian@keyboard-design.com>  
-URL: https://keyboard-design.com/letterlayout.html?layout=uciea-keyboard.en.ansi
-
-This variant of UMOS is a minimalist implementation. It only moves the keys around on the keyboard, but they follow the active host layout's punctuation marks, Shift , AltGr, and AltGr+Shift key maps. Examples:
+These keyboard layout implementations are achieved by programming AutoHotkey to remap Windows keyboard layout's VirtualKeys. The keys are only moved on the keyboard, but they still follow the active host layout's punctuation marks, Shift , AltGr, and AltGr+Shift key maps. Examples:
 
 * If the Windows keyboard layout is US QWERTY, <kbd>AltGr+S</kbd> produces nothing
 
@@ -22,19 +18,38 @@ This variant of UMOS is a minimalist implementation. It only moves the keys arou
 
 * If the Windows keyboard layout is Dutch (QWERTY), <kbd>AltGr+S</kbd> produces ß
 
-It is important to note that some characters of the host layout located on the ISO 102 key are lost on ANSI boards; therefore, it is very important to always select the correct layout type for your keyboard as ANSI and ISO layouts send different [VirtualKey codes](https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes).
+It is important to mention that some characters of the host layout located on the ISO 102 key are lost on ANSI boards; therefore, it is cardinal to always select the correct layout type for your keyboard as ANSI and ISO layouts send different [VirtualKey codes](https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes).
+
+Please note, such VirtualKey-based alternative keyboard layout remaps prevent you from using hotstrings with AutoHotkey, e.g. typing ‘ btw’ outputs *by the way*.
+
+## 2.1 UMOS
+
+UMOS stands for *UCIEA Mirrored (&) Ory's Symbols*. This layout is a mirrored version of Ian Doug's original UCIEA keyboard layout which has also gone through several versions and modifications. Here's the authorship:  
+Author: Ian Doug <ian@keyboard-design.com>  
+URL: https://keyboard-design.com/letterlayout.html?layout=uciea-keyboard.en.ansi
 
 The image below showcases the keyboard layout for ANSI 101/104-key keyboards.
 
 ![UMOS keyboard layout](Assets/Images/Keyboard_Layouts/UMOS_ANSI.png)
 
-Please note, such VirtualKey-based alternative keyboard layout remaps prevent you from using hotstrings with AutoHotkey, e.g. typing ‘ btw’ outputs *by the way*.
+## 2.2 Colemak-DH
+
+Colemak-DH is an improvement over the standard Colemak keyboard layout by replacing the D and H keys thus reducing lateral movement of the index fingers. Authorship details:  
+Author: stevep99  
+URL: https://colemakmods.github.io/mod-dh/
+
+Please note, I've moved the symbol keys (<kbd>[</kbd> <kbd>]</kbd> <kbd>=</kbd> etc.) to personally better positions for easier access.
+
+The image below showcases the keyboard layout for ANSI 101/104-key keyboards.
+
+![Colemak-DH keyboard layout](Assets/Images/Keyboard_Layouts/Colemak-DH_ANSI.png)
 
 # 3. Tweaks
 
 ## Implemented
 
 - [x] Swap <kbd>Caps Lock</kbd> with <kbd>RCtrl</kbd>
+- [x] Add Colemak-DH keyboard layout 
 
 ## To Do
 
@@ -47,6 +62,7 @@ Please note, such VirtualKey-based alternative keyboard layout remaps prevent yo
 ├── main.ahk
 ├── Keyboard/
 │   └── Layouts/..
+│       ├── colemak-dh_layout.ahk
 │       ├── umos_layout.ahk
 │       └── tweaks.ahk
 ├── LICENSE
