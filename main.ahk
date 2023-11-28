@@ -92,5 +92,5 @@ SetWinDelay -1
 #Include %A_ScriptDir%\Keyboard\Layouts\colemak-dh_layout.ahk
 
 ;; Enable/disable keyboard tweaks. Comment/uncommect features.
-#Include %A_ScriptDir%\Keyboard\Layouts\caps_to_rctrl.ahk
-#Include %A_ScriptDir%\Keyboard\Layouts\caps_as_ctrl.ahk
+#Include %A_ScriptDir%\Keyboard\Tweaks\caps_to_rctrl.ahk
+#Include %A_ScriptDir%\Keyboard\Tweaks\caps_as_ctrl.ahk
