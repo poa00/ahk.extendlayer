@@ -11,8 +11,8 @@
 ;; ----------------------------------------------------------------------------
 ;; AUTOHOTKEY GENERAL SETTINGS
 
-;; Allow a script to again. If this directive is unspecified in a script, it
-;; will behave as though set to 'Prompt'. This directive is ignored when any
+;; Allow a script to run again. If this directive is unspecified in a script,
+;; it will behave as though set to 'Prompt'. This directive is ignored when any
 ;; of the following command line switches are used: /force /restart
 ;; (default Force)
 #SingleInstance Force
