@@ -35,6 +35,11 @@
 ;; (default True)
 #MaxThreadsBuffer True
 
+;; Keep scripts running in the background, they will stay running after startup
+;; completes and all other threads have exited.
+;; (default True)
+Persistent True
+
 ;; Default command sending mode, makes 'Send' synonymous with 'SendEvent' or
 ;; 'SendPlay'. Since 'SendMode' also changes the mode of 'Click', 'MouseMove',
 ;; 'MouseClick' and 'MouseClickDrag', there may be times when you wish to use a
