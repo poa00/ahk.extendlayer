@@ -99,4 +99,4 @@ SetWinDelay -1
 ;; Enable/disable keyboard tweaks. Comment/uncommect features.
 ;#Include %A_ScriptDir%\Keyboard\Tweaks\caps_to_rctrl.ahk
 #Include %A_ScriptDir%\Keyboard\Tweaks\caps_as_ctrl.ahk
-#Include %A_ScriptDit%\Keyboard\Tweaks\extend_layer.ahk
+#Include %A_ScriptDir%\Keyboard\Tweaks\extend_layer.ahk
