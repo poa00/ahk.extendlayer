@@ -84,9 +84,9 @@ F24 & SC01b::Return                         ; QWERTY ]}
 F24 & SC01e::Send "{Ctrl Down}{a}{Ctrl Up}" ; QWERTY aA
 F24 & SC01f::Send "{Blind}{LAlt Down}"      ; QWERTY sS
 F24 & SC01f Up::Send "{LAlt Up}"
-F24 & SC020::Send "{Blind}{LShift Down}"     ; QWERTY dD
+F24 & SC020::Send "{Blind}{LShift Down}"    ; QWERTY dD
 F24 & SC020 Up::Send "{LShift Up}"
-F24 & SC021::Send "{Blind}{LCtrl Down}"    ; QWERTY fF
+F24 & SC021::Send "{Blind}{LCtrl Down}"     ; QWERTY fF
 F24 & SC021 Up::Send "{LCtrl Up}"
 F24 & SC022::Send "{Blind}{Tab}"            ; QWERTY gG
 F24 & SC023::Send "{Blind}{PgDn}"           ; QWERTY hH
