@@ -79,7 +79,7 @@ SC01a::x    ; QWERTY [{
 SC01b::vkBB ; QWERTY ]}
 
 ;; Home Row
-SC01E::r    ; QWERTY aA
+SC01e::r    ; QWERTY aA
 SC01f::s    ; QWERTY sS
 SC020::n    ; QWERTY dD
 SC021::t    ; QWERTY fF
