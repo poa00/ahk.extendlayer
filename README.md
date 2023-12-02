@@ -51,10 +51,40 @@ The image below showcases the keyboard layout for ANSI 101/104-key keyboards.
 - [x] Swap <kbd>Caps Lock</kbd> with <kbd>RCtrl</kbd> 
 - [x] Add Colemak-DH keyboard layout
 - [x] Optimise key remapping when CPU speed is slow (CPU is downclocked, notebook is running from battery or other performance downgrading features are enabled). Remapped keyboard layout keys are sometimes note emitted or ignored when Windows performance plan is not set to High Performance or Balanced, or the CPU is not running fast enough.
+- [x] Extend layer
 
 ## To Do
 
 (to be decided)
+
+# 3.1 Extend Layer
+
+‘Extend’ is a special layer that is dedicated for extra functionality of your keyboard (or other peripherals with user input capabilities). It is activated by its own key to provide text editing and navigation functions on the alphanumeric keys without having to move your hands away from their home positions.
+
+This implemention was inspired by stevep99's and Øystein "DreymaR" Bech-Aase's. The code is a fork of stevep99's (https://github.com/stevep99) Extend layer implementation in AutoHotkey for Colemak-DH.
+
+**To activate the Extend layer:** Press and hold the Extend key (<kbd>Caps Lock</kbd>) then press another alphanumeric key.
+
+**To modify the Extend layer activation key:**
+
+1. Navigate to `..\Keyboard\Tweaks\extend_layer.ahk`.
+2. Change the key name at `CapsLock::F24`; e.g. change `Caps Lock` to `LAlt`.
+3. Save your changes.
+4. Reload AutoHotkey.
+
+The image below showcases the Extend layer for ANSI 101/104-key keyboards.
+
+![Extend layer](Assets/Images/Keyboard_Layers/Extend_Layer_Colemak-DH_ANSI_Colours.png)
+
+| ***Key Legends*** |  |  |
+| :--- | :--- | :--- |
+| **Colour** | **Type** | **Comments** |
+| ![Extend layer navigation keys](Assets/Images/Keyboard_Layers/Extend_Layer_Navigation.png) | Navigation | Includes: <kbd>Back</kbd> <kbd>Forward</kbd> <kbd>PgUp</kbd> <kbd>PgDn</kbd> <kbd>Home</kbd> <kbd>End</kbd> <kbd>Left</kbd> <kbd>Down</kbd> <kbd>Up</kbd> <kbd>Right</kbd> <kbd>Mouse Wheel Scroll Down</kbd> <kbd>Mouse Wheel Scroll Up</kbd> |
+| ![Extend layer text manipulation keys](Assets/Images/Keyboard_Layers/Extend_Layer_Text_Manipulation.png) | Text Editing | Includes: <kbd>Delete</kbd> <kbd>Tab</kbd> <kbd>Caps Lock</kbd> <kbd>Backspace</kbd> |
+| ![Extend layer text modifier keys](Assets/Images/Keyboard_Layers/Extend_Layer_Modifiers.png) | Modifiers | Includes: <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>Ctrl</kbd> |
+| ![Extend layer Ctrl shortcuts](Assets/Images/Keyboard_Layers/Extend_Layer_Ctrl_Shortcuts.png) | Ctrl Shortcuts | Includes: <kbd>Ctrl+S</kbd> save <kbd>Ctrl+F</kbd> find <kbd>Ctrl+P</kbd> print <kbd>Ctrl+A</kbd> select all <kbd>Ctrl+X</kbd> cut <kbd>Ctrl+C</kbd> copy <kbd>Ctrl+V</kbd> paste <kbd>Ctrl+Z</kbd> undo <kbd>Ctrl+Y</kbd> redo |
+| ![Extend layer function keys](Assets/Images/Keyboard_Layers/Extend_Layer_Function.png) | F* Keys | Keys from the function row |
+| ![Extend layer unassigned keys](Assets/Images/Keyboard_Layers/Extend_Layer_Unassigned.png) | Unassigned | No mapped function |
 
 # 4. File and Directory Overview
 
