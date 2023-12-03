@@ -5,7 +5,9 @@
  * License     : MIT
  *
  * UMOS stands for UCIEA Mirrored (&) Ory's Symbols. This layout is a mirrored
- * version of Ian Doug's original UCIEA keyboard layout. Authorship details:
+ * version of Ian Doug's original UCIEA keyboard layout.
+ *
+ * UCIEA Authorship Details:
  * Author: Ian Doug <ian@keyboard-design.com>
  * URL: https://keyboard-design.com/letterlayout.html?layout=uciea-keyboard.en.ansi
  *
@@ -16,38 +18,30 @@
  * Shift layers (layers 0 and 1) for alphabetic keys. But it keeps the keymaps
  * for the numeric Shift layer, AltGr, and AltGr+Shift layers (layers 6 and 7).
  * This means that the output of Shift+4 and AltGr+a depends on the active host
- * keyboard layout.
+ * keyboard layout. Such remapped layouts prevent the use of hotstrings, e.g.
+ * typing 'btw' outputs 'by the way'.
  *
- * Such remapped keyboard layouts prevent the use of hotstrings, e.g. typing
- * 'btw' outputs 'by the way'.
-*/
+ * The below keymap is only true for the non-alphabetic and non-numeric keys
+ * if the active host keyboard layout is English US QWERTY.
+ *
+ * ┌───┐   ┌───┬───┬───┬───┐ ┌───┬───┬───┬───┐ ┌───┬───┬───┬───┐
+ * │Esc│   │ F1│ F2│ F3│ F4│ │ F5│ F6│ F7│ F8│ │ F9│F10│F11│F12│
+ * └───┘   └───┴───┴───┴───┘ └───┴───┴───┴───┘ └───┴───┴───┴───┘
+ * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┐
+ * │ ` │ 1 │ 2 │ 3 │ 4 │ 5 │ 6 │ 7 │ 8 │ 9 │ 0 │ [ │ ] │Backspc│
+ * ├───┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─────┤
+ * │ Tab │ Q │ F │ H │ M │ K │ ; │ O │ U │ Y │ P │ X │ = │  \  │
+ * ├─────┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴─────┤
+ * │ Caps │ R │ S │ N │_T_│ G │ - │_A_│ E │ I │ C │ W │  Enter │
+ * ├──────┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴────────┤
+ * │  Shift │ B │ L │ D │ V │ J │ Z │ , │ ' │ . │ / │   Shift  │
+ * ├────┬───┴┬──┴─┬─┴───┴───┴───┴───┴───┴──┬┴───┼───┴┬────┬────┤
+ * │Ctrl│ Win│ Alt│          Space         │RAlt│ Fn │Menu│RCtl│
+ * └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
+ */
 
-;; ----------------------------------------------------------------------------
-;; KEYMAP
-;;
-;; The below keymap is only true for the non-alphabetic and non-numeric keys
-;; if the active host keyboard layout is English US QWERTY.
-;;
-;; ┌───┐   ┌───┬───┬───┬───┐ ┌───┬───┬───┬───┐ ┌───┬───┬───┬───┐
-;; │Esc│   │ F1│ F2│ F3│ F4│ │ F5│ F6│ F7│ F8│ │ F9│F10│F11│F12│
-;; └───┘   └───┴───┴───┴───┘ └───┴───┴───┴───┘ └───┴───┴───┴───┘
-;; ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┐
-;; │ ` │ 1 │ 2 │ 3 │ 4 │ 5 │ 6 │ 7 │ 8 │ 9 │ 0 │ [ │ ] │Backspc│
-;; ├───┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─────┤
-;; │ Tab │ Q │ F │ H │ M │ K │ ; │ O │ U │ Y │ P │ X │ = │  \  │
-;; ├─────┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴─────┤
-;; │ Caps │ R │ S │ N │_T_│ G │ - │_A_│ E │ I │ C │ W │  Enter │
-;; ├──────┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴────────┤
-;; │  Shift │ B │ L │ D │ V │ J │ Z │ , │ ' │ . │ / │   Shift  │
-;; ├────┬───┴┬──┴─┬─┴───┴───┴───┴───┴───┴──┬┴───┼───┴┬────┬────┤
-;; │Ctrl│ Win│ Alt│          Space         │RAlt│ Fn │Menu│RCtl│
-;; └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
-
-;; ----------------------------------------------------------------------------
-;; LAYOUT CONFIGURATION
-;;
 ;; Formatting:
-;; Scancode::VirtualKey
+;Scancode::VirtualKey
 
 ;; Numeric Row
 ;SC01::`    ; QWERTY `~
