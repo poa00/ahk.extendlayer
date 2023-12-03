@@ -37,11 +37,11 @@ SetCapsLockState "AlwaysOff"
 ;; ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┐
 ;; │Esc│ F1│ F2│ F3│ F4│ F5│ F6│ F7│ F8│ F9│F10│F11│F12│Backspc│
 ;; ├───┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─────┤
-;; │ Tab │ ^S│Bck│ ^F│Fwd│Ins│PgU│Hom│Del│End│Prt│   │   │     │
+;; │ Tab │ ^S│Bck│ ^F│Fwd│Ins│PgU│Hom│Del│End│ ^P│   │   │     │
 ;; ├─────┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴─────┤
 ;; │ Caps │ ^A│Alt│LSh│LCt│Tab│PgD│Lft│Dwn│ Up│Rht│   │  Enter │
 ;; ├──────┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴────────┤
-;; │  Shift │Cut│Cpy│Rdo│Pst│Udo│Cps│Bsp│MwD│MwU│   │   Shift  │
+;; │  Shift │ ^X│ ^C│ ^Y│ ^V│ ^Z│Cps│Bsp│MwD│MwU│   │   Shift  │
 ;; ├────┬───┴┬──┴─┬─┴───┴───┴───┴───┴───┴──┬┴───┼───┴┬────┬────┤
 ;; │Ctrl│ Win│ Alt│          Space         │RAlt│ Fn │Menu│RCtl│
 ;; └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
