@@ -4,18 +4,36 @@
  * Copyright   : Copyright (c) ?-2023, stevep99, (c) 2023, Gergely Szabo
  * License     : MIT
  *
- * 'Extend layer' as the name suggests extends the keyboard's current abilities
- * and places them onto a special layer. This implemention was inspired by
- * stevep99's and Øystein "DreymaR" Bech-Aase's.
- * This is a fork of stevep99's (https://github.com/stevep99) Extend layer
- * implementation in AutoHotkey for Colemak-DH.
+ * 'Extend layer' extends the keyboard's current abilities and places them onto
+ * a special layer. This implemention was inspired by stevep99's and Øystein
+ * "DreymaR" Bech-Aase's. This is a fork of stevep99's  Extend layer AutoHotkey
+ * implementation for Colemak-DH.
+ * 
+ * Authorship Details:
+ * Author: stevep99
+ * URL: https://github.com/stevep99/keyboard-tweaks/tree/master/ExtendLayer
  *
  * To activate Extend: Press and hold the Extend key (Caps Lock) then press
  * another alphanumeric key.
-*/
-
-;; ----------------------------------------------------------------------------
-;; LAYER DEFINITIONS
+ *
+ * This keymap stays persistent regardless of the active host keyboard layout,
+ * because the functions are mapped to the physical key locations (scancodes).
+ *
+ * ┌───┐   ┌───┬───┬───┬───┐ ┌───┬───┬───┬───┐ ┌───┬───┬───┬───┐
+ * │   │   │   │   │   │   │ │   │   │   │   │ │   │   │   │   │
+ * └───┘   └───┴───┴───┴───┘ └───┴───┴───┴───┘ └───┴───┴───┴───┘
+ * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┐
+ * │Esc│ F1│ F2│ F3│ F4│ F5│ F6│ F7│ F8│ F9│F10│F11│F12│Backspc│
+ * ├───┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─────┤
+ * │ Tab │ ^S│Bck│ ^F│Fwd│Ins│PgU│Hom│Del│End│ ^P│   │   │     │
+ * ├─────┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴─────┤
+ * │ Caps │ ^A│Alt│LSh│LCt│Tab│PgD│Lft│Dwn│ Up│Rht│   │  Enter │
+ * ├──────┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴────────┤
+ * │  Shift │ ^X│ ^C│ ^Y│ ^V│ ^Z│Cps│Bsp│MwD│MwU│   │   Shift  │
+ * ├────┬───┴┬──┴─┬─┴───┴───┴───┴───┴───┴──┬┴───┼───┴┬────┬────┤
+ * │Ctrl│ Win│ Alt│          Space         │RAlt│ Fn │Menu│RCtl│
+ * └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
+ */
 
 ;; Define the Extend layer key
 #InputLevel 1
@@ -25,31 +43,9 @@ CapsLock::F24   ; Maps Caps Lock to F24 VirtualKey which activates the layer
 ;; Turn off Caps Lock states
 SetCapsLockState "AlwaysOff"
 
-;; ----------------------------------------------------------------------------
-;; KEYMAP / LAYER CONFIGURATION
-;;
-;; This keymap stays persistent regardless of the active host keyboard layout,
-;; because the functions are mapped to the physical key locations (scancodes).
-;;
-;; ┌───┐   ┌───┬───┬───┬───┐ ┌───┬───┬───┬───┐ ┌───┬───┬───┬───┐
-;; │   │   │   │   │   │   │ │   │   │   │   │ │   │   │   │   │
-;; └───┘   └───┴───┴───┴───┘ └───┴───┴───┴───┘ └───┴───┴───┴───┘
-;; ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┐
-;; │Esc│ F1│ F2│ F3│ F4│ F5│ F6│ F7│ F8│ F9│F10│F11│F12│Backspc│
-;; ├───┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─────┤
-;; │ Tab │ ^S│Bck│ ^F│Fwd│Ins│PgU│Hom│Del│End│ ^P│   │   │     │
-;; ├─────┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴─────┤
-;; │ Caps │ ^A│Alt│LSh│LCt│Tab│PgD│Lft│Dwn│ Up│Rht│   │  Enter │
-;; ├──────┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴────────┤
-;; │  Shift │ ^X│ ^C│ ^Y│ ^V│ ^Z│Cps│Bsp│MwD│MwU│   │   Shift  │
-;; ├────┬───┴┬──┴─┬─┴───┴───┴───┴───┴───┴──┬┴───┼───┴┬────┬────┤
-;; │Ctrl│ Win│ Alt│          Space         │RAlt│ Fn │Menu│RCtl│
-;; └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
-;;
-;; Formatting:
-;; F24 & Scancode::Send "{key combination or function}"
-;;
 ;; Note: Where function is 'Return' are unassigned.
+;; Formatting:
+;F24 & Scancode::Send "{key combination or function}"
 
 ;; Numeric Row
 F24 & SC001::Send "{Blind}{Escape}"     ; QWERTY `~
