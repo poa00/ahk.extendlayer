@@ -5,6 +5,6 @@
  * License     : MIT
  *
  * Remap Caps Lock as Ctrl.
-*/
+ */
 
 CapsLock::Ctrl

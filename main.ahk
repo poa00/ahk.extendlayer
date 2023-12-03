@@ -6,7 +6,7 @@
  *
  * This file is responsible for configuring the general behaviour of AutoHotkey
  * scripts and loading others at software launch.
-*/
+ */
 
 ;; ----------------------------------------------------------------------------
 ;; AUTOHOTKEY GENERAL SETTINGS

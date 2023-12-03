@@ -5,6 +5,6 @@
  * License     : MIT
  *
  * Remap Caps Lock to Right Ctrl.
-*/
+ */
 
 RCtrl::CapsLock
