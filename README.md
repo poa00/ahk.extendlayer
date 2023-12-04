@@ -2,7 +2,7 @@
 
 # 1. Description
 
-This is a repository where I collect some of the keyboard focused tweaks and tricks I've implemented in AutoHotkey (‘ AHK’ for short) script. Also, I generally use AHK to emulate my keyboard layout at work where I'm not allowed to install programs or run software with administrator privileges (company policy).
+This is a repository where I collect some of the keyboard focused tweaks and tricks I've implemented in AutoHotkey (‘AHK’ for short) script. Also, I generally use AHK to emulate my keyboard layout at work where I'm not allowed to install programs or run software with administrator privileges (company policy).
 
 There are some work related scripts which I cannot share and they are purposefully left out. I take care to not leave any such code in my scripts, but let me know or create a pull request if I miss something.
 
@@ -57,7 +57,7 @@ The image below showcases the keyboard layout for ANSI 101/104-key keyboards.
 
 (to be decided)
 
-# 3.1 Extend Layer
+## 3.1 Extend Layer
 
 ‘Extend’ is a special layer that is dedicated for extra functionality of your keyboard (or other peripherals with user input capabilities). It is activated by its own key to provide text editing and navigation functions on the alphanumeric keys without having to move your hands away from their home positions.
 
@@ -93,8 +93,6 @@ The image below showcases the Extend layer for ANSI 101/104-key keyboards.
 ├── main.ahk
 ├── Keyboard/
 │   ├── Layouts/
-│   │   ├── colemak-dh_layout.ahk
-│   │   └── umos_layout.ahk
 │   └── Tweaks/..
 ├── LICENSE
 ├── README.md
