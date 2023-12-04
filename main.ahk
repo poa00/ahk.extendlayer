@@ -90,13 +90,26 @@ SetControlDelay -1
 SetWinDelay -1
 
 ;; ----------------------------------------------------------------------------
-;; SCRIPTS TO LOAD
+;; KEYBOARD TWEAKS TO LOAD
 
-;; Set the keyboard layout. Comment/uncomment lines to choose.
+;; Enable/disable keyboard layouts. Comment/uncomment layouts.
+;; Note: Choose only 1 layout or none at all!
+
+; UMOS
 ;#Include %A_ScriptDir%\Keyboard\Layouts\umos_layout.ahk
+
+; Colemak-DH
 #Include %A_ScriptDir%\Keyboard\Layouts\colemak-dh_layout.ahk
 
 ;; Enable/disable keyboard tweaks. Comment/uncommect features.
+
+; Make RCtrl behave as Caps Lock
 ;#Include %A_ScriptDir%\Keyboard\Tweaks\caps_to_rctrl.ahk
+
+; Remap Caps Lock as Ctrl
 #Include %A_ScriptDir%\Keyboard\Tweaks\caps_as_ctrl.ahk
+
+; Extend layer is a powerful tool that adds an extra layer to your keyboard
+; which is activated by a dedicated key (Caps Lock by default).
+; Note: Other tweaks that also utilise the Extend key must be disabled.
 #Include %A_ScriptDir%\Keyboard\Tweaks\extend_layer.ahk
