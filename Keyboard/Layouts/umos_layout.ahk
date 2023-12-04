@@ -7,7 +7,7 @@
  * UMOS stands for UCIEA Mirrored (&) Ory's Symbols. This layout is a mirrored
  * version of Ian Doug's original UCIEA keyboard layout.
  *
- * UCIEA Authorship Details:
+ * Keyboard Layout (UCEIA) Authorship Details:
  * Author: Ian Doug <ian@keyboard-design.com>
  * URL: https://keyboard-design.com/letterlayout.html?layout=uciea-keyboard.en.ansi
  *

@@ -24,9 +24,11 @@ Please note, such VirtualKey-based alternative keyboard layout remaps prevent yo
 
 ## 2.1 UMOS
 
-UMOS stands for *UCIEA Mirrored (&) Ory's Symbols*. This layout is a mirrored version of Ian Doug's original UCIEA keyboard layout which has also gone through several versions and modifications. Here's the authorship:  
-Author: Ian Doug <ian@keyboard-design.com>  
-URL: https://keyboard-design.com/letterlayout.html?layout=uciea-keyboard.en.ansi
+UMOS stands for *UCIEA Mirrored (&) Ory's Symbols*. This layout is a mirrored version of Ian Doug's original UCIEA keyboard layout which has also gone through several versions and modifications.
+
+**Keyboard Layout Authorship**:  
+**Author:** Ian Doug <ian@keyboard-design.com>  
+**URL:** https://keyboard-design.com/letterlayout.html?layout=uciea-keyboard.en.ansi
 
 The image below showcases the keyboard layout for ANSI 101/104-key keyboards.
 
@@ -34,9 +36,11 @@ The image below showcases the keyboard layout for ANSI 101/104-key keyboards.
 
 ## 2.2 Colemak-DH
 
-Colemak-DH is an improvement over the standard Colemak keyboard layout by replacing the D and H keys thus reducing lateral movement of the index fingers. Authorship details:  
-Author: stevep99  
-URL: https://colemakmods.github.io/mod-dh/
+Colemak-DH is an improvement over the standard Colemak keyboard layout by replacing the D and H keys thus reducing lateral movement of the index fingers.
+
+**Keyboard Layout Authorship:**  
+**Author:** stevep99  
+**URL:** https://colemakmods.github.io/mod-dh/
 
 Please note, I've moved the symbol keys (<kbd>[</kbd> <kbd>]</kbd> <kbd>=</kbd> etc.) to personally better positions for easier access.
 
@@ -93,7 +97,7 @@ The image below showcases the Extend layer for ANSI 101/104-key keyboards.
 ├── main.ahk
 ├── Keyboard/
 │   ├── Layouts/
-│   └── Tweaks/..
+│   └── Tweaks/
 ├── LICENSE
 ├── README.md
 └── Assets/..

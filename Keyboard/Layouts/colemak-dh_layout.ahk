@@ -8,7 +8,7 @@
  * replacing the D and H keys thus reducing lateral movement of the index
  * fingers.
  *
- * Colemak-DH Authorship Details:
+ * Keyboard Layout Authorship Details:
  * Author: stevep99
  * URL: https://colemakmods.github.io/mod-dh/
  *
