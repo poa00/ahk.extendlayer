@@ -68,7 +68,7 @@ This implemention was inspired by stevep99's and Øystein "DreymaR" Bech-Aase's.
 **To modify the Extend layer activation key:**
 
 1. Navigate to `..\Keyboard\Tweaks\extend_layer.ahk`.
-2. Change the key name at `CapsLock::F24`; e.g. change `Caps Lock` to `LAlt`.
+2. Change the key name at `CapsLock::F24`; e.g. change <kbd>Caps Lock</kbd> to <kbd>LAlt</kbd>.
 3. Save your changes.
 4. Reload AutoHotkey.
 
