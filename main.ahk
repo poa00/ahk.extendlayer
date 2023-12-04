@@ -40,6 +40,11 @@
 ;; (default True)
 Persistent True
 
+;; Set AutoHotkey's process priority level. This setting can also be applied to
+;; individual scripts. The value is visible in Task Manager.
+;; (default Normal)
+ProcessSetPriority "High"
+
 ;; Default command sending mode, makes 'Send' synonymous with 'SendEvent' or
 ;; 'SendPlay'. Since 'SendMode' also changes the mode of 'Click', 'MouseMove',
 ;; 'MouseClick' and 'MouseClickDrag', there may be times when you wish to use a
@@ -48,6 +53,12 @@ Persistent True
 ;; (default Input)
 SendMode "Event"
 
+;; ----------------------------------------------------------------------------
+;; AUTOHOTKEY BENCHMARKING / DEBUGGING / TROUBLESHOOTING SETTINGS
+;;
+;; These settings only have an effect if 'SendMode' is 'Input' with the
+;; exception of 'KeyHistory' and 'ListLines'.
+
 ;; Enable key history and how many items to display.
 ;; (default 40)
 KeyHistory 0
@@ -55,16 +66,6 @@ KeyHistory 0
 ;; Enable or disable line logging.
 ;; (default 1)
 ListLines 0
-
-;; Set AutoHotkey's process priority level. This setting can also be applied to
-;; individual scripts. The value is visible in Task Manager.
-;; (default Normal)
-ProcessSetPriority "High"
-
-;; ----------------------------------------------------------------------------
-;; AUTOHOTKEY BENCHMARKING / DEBUGGING / TROUBLESHOOTING SETTINGS
-;;
-;; These settings are not in effect if 'SendMode' is 'Input'.
 
 ;; Set the mouse speed that will be used if unspecified in 'Click',
 ;; 'MouseMove', 'MouseClick', and 'MouseClickDrag'.
