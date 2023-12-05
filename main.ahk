@@ -105,10 +105,10 @@ SetWinDelay -1
 ;; Enable/disable keyboard tweaks. Comment/uncommect features.
 
 ; Make RCtrl behave as Caps Lock
-;#Include %A_ScriptDir%\Keyboard\Tweaks\caps_to_rctrl.ahk
+#Include %A_ScriptDir%\Keyboard\Tweaks\caps_to_rctrl.ahk
 
 ; Remap Caps Lock as Ctrl
-#Include %A_ScriptDir%\Keyboard\Tweaks\caps_as_ctrl.ahk
+;#Include %A_ScriptDir%\Keyboard\Tweaks\caps_as_ctrl.ahk
 
 ; Extend layer is a powerful tool that adds an extra layer to your keyboard
 ; which is activated by a dedicated key (Caps Lock by default).
