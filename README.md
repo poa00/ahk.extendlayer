@@ -84,7 +84,7 @@ The image below showcases the Extend layer for ANSI 101/104-key keyboards.
 | :--- | :--- | :--- |
 | **Colour** | **Type** | **Comments** |
 | ![Extend layer navigation keys](Assets/Images/Keyboard_Layers/Extend_Layer_Navigation.png) | Navigation | Includes: <kbd>Back</kbd> <kbd>Forward</kbd> <kbd>PgUp</kbd> <kbd>PgDn</kbd> <kbd>Home</kbd> <kbd>End</kbd> <kbd>Left</kbd> <kbd>Down</kbd> <kbd>Up</kbd> <kbd>Right</kbd> <kbd>Mouse Wheel Scroll Down</kbd> <kbd>Mouse Wheel Scroll Up</kbd> |
-| ![Extend layer text manipulation keys](Assets/Images/Keyboard_Layers/Extend_Layer_Text_Manipulation.png) | Text Editing | Includes: <kbd>Delete</kbd> <kbd>Tab</kbd> <kbd>Caps Lock</kbd> <kbd>Backspace</kbd> |
+| ![Extend layer text manipulation keys](Assets/Images/Keyboard_Layers/Extend_Layer_Text_Manipulation.png) | Text Editing | Includes: <kbd>Delete</kbd> <kbd>Tab</kbd> <kbd>Caps Lock</kbd> <kbd>Backspace</kbd> <kbd>Enter</kbd> |
 | ![Extend layer text modifier keys](Assets/Images/Keyboard_Layers/Extend_Layer_Modifiers.png) | Modifiers | Includes: <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>Ctrl</kbd> |
 | ![Extend layer Ctrl shortcuts](Assets/Images/Keyboard_Layers/Extend_Layer_Ctrl_Shortcuts.png) | Ctrl Shortcuts | Includes: <kbd>Ctrl+S</kbd> save <kbd>Ctrl+F</kbd> find <kbd>Ctrl+P</kbd> print <kbd>Ctrl+A</kbd> select all <kbd>Ctrl+X</kbd> cut <kbd>Ctrl+C</kbd> copy <kbd>Ctrl+V</kbd> paste <kbd>Ctrl+Z</kbd> undo <kbd>Ctrl+Y</kbd> redo |
 | ![Extend layer function keys](Assets/Images/Keyboard_Layers/Extend_Layer_Function.png) | F* Keys | Keys from the function row |

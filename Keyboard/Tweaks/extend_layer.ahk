@@ -109,6 +109,9 @@ F24 & SC033::Send "{WheelDown}"             ; QWERTY ,<
 F24 & SC034::Send "{WheelUp}"               ; QWERTY .>
 F24 & SC035::Return                         ; QWERTY /?
 
+;; Misc. Keys
+F24 & SC039::Send "{Blind}{Enter}"      ; Space
+
 ;; Mouse Buttons
 F24 & WheelDown::Send "{Volume_Down}"   ; Mouse wheel scroll down
 F24 & WheelUp::Send "{Volume_Up}"       ; Mouse wheel scrool up
