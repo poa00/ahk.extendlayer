@@ -114,3 +114,8 @@ SetWinDelay -1
 ; which is activated by a dedicated key (Caps Lock by default).
 ; Note: Other tweaks that also utilise the Extend key must be disabled.
 #Include %A_ScriptDir%\Keyboard\Tweaks\extend_layer.ahk
+
+; Symbol layer adds an extra layer dedicated for easier symbol and digit access
+; which is activated by a dedicated key (Alt by default).
+; Note: Other tweaks that also utilise the Symbol key must be disabled.
+#Include %A_ScriptDir%\Keyboard\Tweaks\symbol_layer.ahk

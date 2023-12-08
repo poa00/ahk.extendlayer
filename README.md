@@ -56,6 +56,7 @@ The image below showcases the keyboard layout for ANSI 101/104-key keyboards.
 - [x] Add Colemak-DH keyboard layout
 - [x] Optimise key remapping when CPU speed is slow (CPU is downclocked, notebook is running from battery or other performance downgrading features are enabled). Remapped keyboard layout keys are sometimes note emitted or ignored when Windows performance plan is not set to High Performance or Balanced, or the CPU is not running fast enough.
 - [x] Extend layer
+- [x] Symbol layer
 
 ## To Do
 
@@ -89,6 +90,23 @@ The image below showcases the Extend layer for ANSI 101/104-key keyboards.
 | ![Extend layer Ctrl shortcuts](Assets/Images/Keyboard_Layers/Extend_Layer_Ctrl_Shortcuts.png) | Ctrl Shortcuts | Includes: <kbd>Ctrl+S</kbd> save <kbd>Ctrl+F</kbd> find <kbd>Ctrl+P</kbd> print <kbd>Ctrl+A</kbd> select all <kbd>Ctrl+X</kbd> cut <kbd>Ctrl+C</kbd> copy <kbd>Ctrl+V</kbd> paste <kbd>Ctrl+Z</kbd> undo <kbd>Ctrl+Y</kbd> redo |
 | ![Extend layer function keys](Assets/Images/Keyboard_Layers/Extend_Layer_Function.png) | F* Keys | Keys from the function row |
 | ![Extend layer unassigned keys](Assets/Images/Keyboard_Layers/Extend_Layer_Unassigned.png) | Unassigned | No mapped function |
+
+## 3.2 Symbol Layer
+
+The Symbol layer adds a special layer dedicated for easier symbol and digit access. This implemention was inspired by stevep99's ‘AltGr Programmer’ extension (https://github.com/stevep99).
+
+**To activate the Symbol layer:** Press and hold the Symbol key (<kbd>Alt</kbd>) then press another alphanumeric key.
+
+**To modify the Symbol layer activation key:**
+
+1. Navigate to `..\Keyboard\Tweaks\symbol_layer.ahk`.
+2. Change the key name at `LAlt::F23`; e.g. change <kbd>Alt</kbd> to <kbd>Caps Lock</kbd>.
+3. Save your changes.
+4. Reload AutoHotkey.
+
+The image below showcases the Symbol layer for ANSI 101/104-key keyboards.
+
+![Symbol layer](Assets/Images/Keyboard_Layers/Symbol_Layer_Colemak-DH_ANSI.png)
 
 # 4. File and Directory Overview
 
