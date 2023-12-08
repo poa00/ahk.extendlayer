@@ -60,7 +60,7 @@ The image below showcases the keyboard layout for ANSI 101/104-key keyboards.
 
 ## To Do
 
-(to be decided)
+- [ ] Fix Alt-Tabbing when Symbol layer key is set to <kbd>Alt</kbd>
 
 ## 3.1 Extend Layer
 
