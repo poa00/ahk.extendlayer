@@ -6,7 +6,7 @@
  *
  * 'Extend layer' extends the keyboard's current abilities and places them onto
  * a special layer. This implemention was inspired by stevep99's and Øystein
- * "DreymaR" Bech-Aase's. This is a fork of stevep99's  Extend layer AutoHotkey
+ * "DreymaR" Bech-Aase's. This is a fork of stevep99's Extend layer AutoHotkey
  * implementation for Colemak-DH.
  * 
  * Authorship Details:
