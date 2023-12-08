@@ -118,7 +118,7 @@ The image below showcases the Symbol layer for ANSI 101/104-key keyboards.
 │   └── Tweaks/
 ├── LICENSE
 ├── README.md
-└── Assets/..
+└── Assets/
 ```
 | ***Project Files*** |  |  |
 | :--- | :--- | :--- |
